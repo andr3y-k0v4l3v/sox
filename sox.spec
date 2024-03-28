@@ -1,7 +1,3 @@
-#============================================================================
-# Please do not edit!
-# Created by specgen utility from files in specs/ subdir
-#============================================================================
 Name: sox
 Summary: A general purpose sound file conversion tool
 Version: 14.4.2
@@ -401,7 +397,10 @@ rm -rf %buildroot%_libdir/sox/*.a
 %files play
 %changelog
 * Thu Mar 28 2024 Andrey Kovalev <ded@altlinux.org> 14.4.2-alt6
-- Closed CVE
+- Fixes: CVE-2017-15371, CVE-2019-8355, CVE-2021-33844, CVE-2017-15370,
+CVE-2019-8356, CVE-2021-3643, CVE-2017-11332, CVE-2019-8357, CVE-2021-40426,
+CVE-2017-11359, CVE-2023-32627, CVE-2022-31650, CVE-2017-15372, CVE-2017-11358,
+CVE-2022-31651, CVE-2017-15642, CVE-2019-13590, CVE-2019-8354, CVE-2021-23159.
 
 * Sat Mar 23 2024 Ilya Kurdyukov <ilyakurdyukov@altlinux.org> 14.4.2-alt6
 - Fixed build for Elbrus.
