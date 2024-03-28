@@ -6,7 +6,7 @@ License: GPLv2+ and LGPLv2+ and MIT
 Group: Sound
 BuildRequires: glibc-devel-static libalsa-devel libao-devel libflac-devel libgomp-devel libgsm-devel libid3tag-devel liblame-devel libltdl7-devel libmad-devel libmagic-devel libopencore-amrnb-devel libopencore-amrwb-devel libopusfile-devel libpng-devel libsndfile-devel libvorbis-devel libwavpack-devel
 %def_with pulse
-Url: http://%name.sourceforge.net/
+Url: https://sourceforge.net/projects/sox/
 Source: %name-%version.tar
 Source1: soxeffect
 Patch1: %name.dyn.patch
