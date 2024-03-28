@@ -1,0 +1,82 @@
+Description: spelling fixes
+Author: Jaromír Mikeš <mira.mikes@seznam.cz>
+Forwarded: sox-devel@lists.sourceforge.net
+
+Index: sox/ChangeLog
+===================================================================
+--- a/sox/ChangeLog
++++ b/sox/ChangeLog
+@@ -972,7 +972,7 @@ sox-12.18.1	2006-05-07
+ 
+   o The "filter" effect could go into infinite drain mode.  Now
+     only drain 1 buffer.  noisered as well.
+-  o SoX was ignoring user aborts (ctrl-c) if it occured during
++  o SoX was ignoring user aborts (ctrl-c) if it occurred during
+     effect drain operations.  This was bad if effects had
+     bugs and stuck in infinite loop.
+   o Stop SoX from crashing when file type could not be auto
+Index: sox/libsox.3
+===================================================================
+--- a/sox/libsox.3
++++ b/sox/libsox.3
+@@ -175,7 +175,7 @@ failures. Currently, relies on \fBsox_wa
+ successfully read or written. If an error occurs, or the end-of-file
+ is reached, the return value is a short item count or SOX_EOF. TODO:
+ \fBsox_read\fR does not distiguish between end-of-file and error. Need
+-an feof() and ferror() concept to determine which occured.
++an feof() and ferror() concept to determine which occurred.
+ .P
+ Upon successful completion \fBsox_close\fR returns 0. Otherwise, SOX_EOF
+ is returned. In either case, any further access (including another
+Index: sox/libsox.txt
+===================================================================
+--- a/sox/libsox.txt
++++ b/sox/libsox.txt
+@@ -148,7 +148,7 @@ RETURN VALUE
+        or  written.  If  an  error  occurs, or the end-of-file is reached, the
+        return value is a short item count or SOX_EOF. TODO: sox_read does  not
+        distiguish  between  end-of-file and error. Need an feof() and ferror()
+-       concept to determine which occured.
++       concept to determine which occurred.
+ 
+        Upon successful completion sox_close returns 0. Otherwise,  SOX_EOF  is
+        returned. In either case, any further access (including another call to
+Index: sox/src/fap.c
+===================================================================
+--- a/sox/src/fap.c
++++ b/sox/src/fap.c
+@@ -26,7 +26,7 @@ LSX_FORMAT_HANDLER(fap)
+   static sox_format_handler_t handler;
+   handler = *lsx_sndfile_format_fn();
+   handler.description =
+-    "Ensoniq PARIS digitial audio editing system (little endian)";
++    "Ensoniq PARIS digital audio editing system (little endian)";
+   handler.names = names;
+   handler.write_formats = write_encodings;
+   return &handler;
+Index: sox/src/paf.c
+===================================================================
+--- a/sox/src/paf.c
++++ b/sox/src/paf.c
+@@ -26,7 +26,7 @@ LSX_FORMAT_HANDLER(paf)
+   static sox_format_handler_t handler;
+   handler = *lsx_sndfile_format_fn();
+   handler.description =
+-    "Ensoniq PARIS digitial audio editing system (big endian)";
++    "Ensoniq PARIS digital audio editing system (big endian)";
+   handler.names = names;
+   handler.write_formats = write_encodings;
+   return &handler;
+Index: sox/src/wav.c
+===================================================================
+--- a/sox/src/wav.c
++++ b/sox/src/wav.c
+@@ -442,7 +442,7 @@ static int findChunk(sox_format_t * ft,
+             }
+             else
+             {
+-                lsx_fail_errno(ft, SOX_EHDR, "Cannot yet read block sizes of arbitary RF64 chunks, cannot find chunk '%s'", Label);
++                lsx_fail_errno(ft, SOX_EHDR, "Cannot yet read block sizes of arbitrary RF64 chunks, cannot find chunk '%s'", Label);
+                 return SOX_EOF;
+             }
+         }

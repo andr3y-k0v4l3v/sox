@@ -1,0 +1,3 @@
+copy: soxeffect
+tar: sox
+copy: patches/*.patch

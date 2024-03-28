@@ -1,0 +1,18 @@
+Description: Fix - W: sox: manpage-has-errors-from-man usr/share/man/man1/sox.1.gz  file `<standard input>'
+Author: gabor.karsay@gmx.at
+Jaromír Mikeš <mira.mikes@seznam.cz>
+Forwarded: sox-devel@lists.sourceforge.net
+
+Index: sox/sox.1
+===================================================================
+--- a/sox/sox.1
++++ b/sox/sox.1
+@@ -2699,7 +2699,7 @@ as detailed in the following table:
+ .ne 6
+ .TS
+ center;
+-lB lw52.
++lB lw51.
+ \-M/\-I/\-L	Phase response = minimum/intermediate/linear
+ \-s	Steep filter (band-width = 99%)
+ \-a	Allow aliasing/imaging above the pass-band
